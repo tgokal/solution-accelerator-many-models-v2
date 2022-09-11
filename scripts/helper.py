@@ -7,6 +7,7 @@ import pandas as pd
 
 def split_data(data_path, time_column_name, split_date):
 
+    data_path = data_path.split('/')[-2]
     train_data_path = os.path.join(data_path, "upload_train_data")
     inference_data_path = os.path.join(data_path, "upload_inference_data")
     os.makedirs(train_data_path, exist_ok=True)

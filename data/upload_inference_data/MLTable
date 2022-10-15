@@ -1,0 +1,8 @@
+paths: 
+  - file: ./upload_inference_data/inference_dataset.csv
+transformations: 
+  - read_delimited: 
+      delimiter: ',' 
+      encoding: 'ascii' 
+      empty_as_string: false
+      header: from_first_file
